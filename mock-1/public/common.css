@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Lato;
+}
+
+/* main-view */
+.main-view {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/main-view__background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.main-view__logo {
+  margin-top: 26vh;
+}
+
+.main-view__title {
+  margin: 0;
+  margin-top: 8vh;
+
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 8.62px;
+}
+
+.main-view__our_proposal {
+  margin-top: 4vh;
+
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  line-height: 29px;
+}
+
+.main-view__scroll-down {
+  margin-top: auto;
+  margin-bottom: 10.7vh;
+}
+
+/* about-us */
+.about-us {
+  padding: 160px 0;
+  text-align: center;
+}
+
+/* container */
+.container {
+  display: inline-block;
+  position: relative;
+  width: 902px;
+  border: 2px solid #3c3c3c;
+  padding: 76px 160px 60px;
+
+  color: #3c3c3c;
+}
+
+.container__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 427px;
+  background-color: white;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 8.95px;
+}
+
+.container__content {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
