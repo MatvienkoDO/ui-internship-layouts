@@ -148,3 +148,48 @@ body {
   background-size: cover;
   background-position: 50%;
 }
+
+/* plates */
+.plates {
+  height: 484px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.plates__plate {
+  height: 237px;
+  flex-basis: 28.59%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.plates__plate_big {
+  flex-basis: 41.77%;
+}
+
+.plates__plate_picture_1st {
+  background-image: url(assets/plates_plate_1.png);
+}
+
+.plates__plate_picture_2nd {
+  background-image: url(assets/plates_plate_2.png);
+}
+
+.plates__plate_picture_3rd {
+  background-image: url(assets/plates_plate_3.png);
+}
+
+.plates__plate_picture_4th {
+  background-image: url(assets/plates_plate_4.png);
+}
+
+.plates__plate_picture_5th {
+  background-image: url(assets/plates_plate_5.png);
+}
+
+.plates__plate_picture_6th {
+  background-image: url(assets/plates_plate_6.png);
+}
