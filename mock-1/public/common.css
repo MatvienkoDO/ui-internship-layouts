@@ -80,6 +80,11 @@ body {
   right: -2px;
 }
 
+.text-container_color_white {
+  color: white;
+  border-color: white;
+}
+
 .text-container__title {
   position: absolute;
   top: 0;
@@ -94,15 +99,29 @@ body {
   letter-spacing: 8.95px;
 }
 
-.text-container__short-content {
+.text-container__content {
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 25px;
 }
 
-.text-container_color_white {
-  color: white;
-  border-color: white;
+/* item */
+.item {
+  padding: 49px 0 39px;
+}
+
+.item__title {
+  margin: 35px 0 0;
+
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.26px;
+}
+
+.item__content {
+  margin: 30px 0 0;
+  font-size: 14px;
 }
 
 /* container */
