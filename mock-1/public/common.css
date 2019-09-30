@@ -216,3 +216,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 8.95px;
 }
+
+@media (max-width: 1200px) {
+  .plates {
+    height: 479px;
+  }
+  .plates__text {
+    margin: auto auto 20px 15px;
+
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .plates__text {
+    margin: auto auto 15px 5px;
+
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+}
