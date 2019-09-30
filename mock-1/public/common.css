@@ -259,6 +259,8 @@ p {
   padding: 23px 0;
   border: 2px solid #3c3c3c;
   background-color: #3c3c3c;
+  cursor: pointer;
+  outline: none;
 
   color: white;
   font-family: Lato;
@@ -266,6 +268,10 @@ p {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.54px;
+}
+
+.contact-us:active {
+  transform: scale(0.95);
 }
 
 /* signature */
