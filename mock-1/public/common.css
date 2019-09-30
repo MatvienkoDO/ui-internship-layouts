@@ -52,24 +52,18 @@ body {
   margin-bottom: 10.7vh;
 }
 
-/* about-us */
-.about-us {
-  padding: 160px 0;
-  text-align: center;
-}
-
-/* container */
-.container {
+/* text-container */
+.text-container {
   display: inline-block;
   position: relative;
   width: 902px;
   border: 2px solid #3c3c3c;
-  padding: 76px 160px 60px;
+  padding: 76px 160px 53px;
 
   color: #3c3c3c;
 }
 
-.container__title {
+.text-container__title {
   position: absolute;
   top: 0;
   left: 50%;
@@ -84,8 +78,30 @@ body {
   letter-spacing: 8.95px;
 }
 
-.container__content {
+.text-container__content {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+
+/* container */
+.container {
+  text-align: center;
+  padding: 160px 0;
+}
+
+.container_specific-indent_services {
+  padding: 128px 0 109px;
+}
+
+.container_specific-indent_what-we-do {
+  padding: 120px 0 115px;
+}
+
+.container_specific-indent_contact-us {
+  padding: 138px 0 63px;
+}
+
+.container_background {
+  background-image: url(assets/container_background.png);
 }
