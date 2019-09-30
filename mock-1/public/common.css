@@ -7,6 +7,10 @@ body {
   font-family: Lato;
 }
 
+p {
+  margin: 0;
+}
+
 /* main-view */
 .main-view {
   width: 100vw;
@@ -150,7 +154,11 @@ body {
 }
 
 .container_specific-indent_contact-us {
-  padding: 138px 0 63px;
+  padding: 138px 0 0;
+}
+
+.container_specific-indent_signature {
+  padding: 63px 0;
 }
 
 .container_background {
@@ -236,4 +244,37 @@ body {
     font-size: 28px;
     letter-spacing: 5px;
   }
+}
+
+/* contact-us */
+.contact-us {
+  margin-top: 42px;
+  width: 395px;
+  padding: 23px 0;
+  border: 2px solid #3c3c3c;
+  background-color: #3c3c3c;
+
+  color: white;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.54px;
+}
+
+/* signature */
+.signature {
+  display: flex;
+}
+
+.signature__logo {
+  margin: auto 0 auto auto;
+}
+
+.signature__text {
+  margin: auto auto auto 36px;
+
+  color: #3c3c3c;
+  font-size: 14px;
+  font-weight: 400;
 }
