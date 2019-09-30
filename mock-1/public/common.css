@@ -85,6 +85,17 @@ body {
   border-color: white;
 }
 
+@media (max-width: 1020px) {
+  .text-container {
+    width: 702px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .text-container::before, .text-container::after {
+    width: 138px;
+  }
+}
+
 .text-container__title {
   position: absolute;
   top: 0;
