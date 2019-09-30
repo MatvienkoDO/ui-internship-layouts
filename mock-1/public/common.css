@@ -14,7 +14,7 @@ body {
   background-image: url(assets/main-view__background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 90% 90%;
+  background-position: 90%;
 
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@ body {
   position: absolute;
   top: -2px;
   width: 238px;
-  border: 1px solid #3c3c3c;
+  border: 1px solid;
 }
 
 .text-container::before {
@@ -100,6 +100,11 @@ body {
   line-height: 24px;
 }
 
+.text-container_color_white {
+  color: white;
+  border-color: white;
+}
+
 /* container */
 .container {
   text-align: center;
@@ -120,4 +125,7 @@ body {
 
 .container_background {
   background-image: url(assets/container_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
