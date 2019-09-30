@@ -164,6 +164,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  overflow: hidden;
 }
 
 .plates__plate_big {
@@ -192,4 +194,14 @@ body {
 
 .plates__plate_picture_6th {
   background-image: url(assets/plates_plate_6.png);
+}
+
+.plates__text {
+  margin: auto auto 30px 40px;
+
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
 }
