@@ -185,6 +185,12 @@ p {
   background-position: center;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.plates__plate:hover {
+  transform: scale(1.05);
 }
 
 .plates__plate_big {
