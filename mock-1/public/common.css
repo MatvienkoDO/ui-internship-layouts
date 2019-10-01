@@ -191,8 +191,9 @@ p {
 }
 
 .plates__plate:hover {
-  transform: scale(1.0075);
-  opacity: 0.95;
+  transform: scale(1.007);
+  opacity: 0.9;
+  box-shadow: 0 0 7.5px grey;
 }
 
 .plates__plate_big {
