@@ -184,6 +184,7 @@ p {
   background-size: cover;
   background-position: center;
   display: flex;
+  align-items: flex-end;
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s;
@@ -222,7 +223,7 @@ p {
 }
 
 .plates__text {
-  margin: auto auto 30px 40px;
+  margin: 0 0 30px 40px;
 
   color: white;
   font-size: 34px;
@@ -236,7 +237,7 @@ p {
     height: 479px;
   }
   .plates__text {
-    margin: auto auto 20px 15px;
+    margin: 0 0 20px 15px;
 
     font-size: 30px;
     letter-spacing: 8px;
@@ -245,7 +246,7 @@ p {
 
 @media (max-width: 920px) {
   .plates__text {
-    margin: auto auto 15px 5px;
+    margin: 0 0 15px 5px;
 
     font-size: 28px;
     letter-spacing: 5px;
@@ -276,15 +277,12 @@ p {
 
 /* signature */
 .signature {
-  display: flex;
-}
-
-.signature__logo {
-  margin: auto 0 auto auto;
+  display: inline-flex;
+  align-items: center;
 }
 
 .signature__text {
-  margin: auto auto auto 36px;
+  margin-left: 36px;
 
   color: #3c3c3c;
   font-size: 14px;
