@@ -187,11 +187,12 @@ p {
   align-items: flex-end;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .plates__plate:hover {
-  transform: scale(1.05);
+  transform: scale(1.0075);
+  opacity: 0.95;
 }
 
 .plates__plate_big {
@@ -272,7 +273,8 @@ p {
 }
 
 .contact-us:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
+  opacity: 0.95;
 }
 
 /* signature */
