@@ -40,6 +40,7 @@ p {
   font-size: 54px;
   font-weight: 700;
   letter-spacing: 8.62px;
+  white-space: pre-line;
 }
 
 .main-view__our_proposal {
@@ -49,6 +50,7 @@ p {
   font-weight: 400;
   letter-spacing: 0.9px;
   line-height: 29px;
+  white-space: pre-line;
 }
 
 .main-view__scroll-down {
