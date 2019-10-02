@@ -185,6 +185,7 @@ p {
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .plates__plate {
