@@ -122,6 +122,10 @@ p {
   line-height: 25px;
 }
 
+.text-container__content_preformatted {
+  white-space: pre-line;
+}
+
 /* item */
 .item {
   padding: 49px 0 39px;
@@ -139,6 +143,10 @@ p {
 .item__content {
   margin: 30px 0 0;
   font-size: 14px;
+}
+
+.item__content_preformatted {
+  white-space: pre-line;
 }
 
 /* container */
