@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "dmitrii-matvienko-task-1",
+    "site": "dmitrii-matvienko-task-1remake",
     "public": "public",
     "ignore": [
       "firebase.json",
