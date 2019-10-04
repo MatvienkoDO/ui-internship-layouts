@@ -26,6 +26,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+@media (max-height: 360px) {
+  .section_content-alignment_top-center {
+    padding-bottom: 0px;
+  }
+}
+
 .section_background_1, .section_background_2 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,6 +97,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-size: 54px;
   letter-spacing: 8.62px;
   white-space: pre-line;
+}
+
+@media (max-width: 620px), (max-height: 600px) {
+  .item__title_size_big {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .item__title_size_small {
@@ -171,6 +184,18 @@ body, p, h1, h2, h3, h4, h5, h6 {
   bottom: 10.7vh;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 620px), (max-height: 600px) {
+  .scroll-down-logo {
+    bottom: 10px;
+  }
+}
+
+@media (max-height: 360px) {
+  .scroll-down-logo {
+    display: none;
+  }
 }
 
 
