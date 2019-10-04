@@ -54,12 +54,13 @@
       color: $primary-color
 
 .topic.topic_showed
-  .topic__type
-    margin-top: 100px
+  .topic
+    &__type
+      margin-top: 100px
 
-  .topic__type, .topic__title, .topic__text
-    padding-left: $topic-field
-    padding-right: $topic-field
+    &__type, &__title, &__text
+      padding-left: $topic-field
+      padding-right: $topic-field
 
-  .topic__leave-comment
-    margin: 51px $topic-field 15px
+    &__leave-comment
+      margin: 51px $topic-field 15px
