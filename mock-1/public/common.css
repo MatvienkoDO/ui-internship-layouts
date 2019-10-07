@@ -259,7 +259,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .plates__plate:hover {
   transform: scale(1.007);
   opacity: 0.9;
-  box-shadow: 0 0 7.5px grey;
+  box-shadow: 0 0 7.5px gray;
 }
 
 .plates__plate_big {
@@ -356,9 +356,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.contact-us:hover {
+  transform: scale(1.007);
+  opacity: 0.9;
+  box-shadow: 0 0 7.5px gray;
+}
+
 .contact-us:active {
   transform: scale(0.98);
-  opacity: 0.95;
 }
 
 
