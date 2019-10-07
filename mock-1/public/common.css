@@ -217,6 +217,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   bottom: 10.7vh;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 @media (max-width: 620px), (max-height: 600px) {
