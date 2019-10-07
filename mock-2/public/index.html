@@ -63,5 +63,27 @@
         </article>
       </div>
     </section>
+
+    <section class="section section_gray section_centering-content section_vertical-field_small">
+      <form class="subscription" name="subscription"
+        action="/some_address" method="post" target="_blank">
+
+        <label class="subscription__label" for="subscription-email-input">
+          <div class="subscription__caption">Sign up for our newsletter!</div>
+
+          <div class="subscription__email">
+            <input
+              class="subscription__email-input"
+              type="email"
+              id="subscription-email-input"
+              name="email"
+              placeholder="Enter a valid email address"
+              required>
+            <input class="subscription__submit" type="submit" value="">
+          </div>
+        </label>
+
+      </form>
+    </section>
   </body>
 </html>
