@@ -58,7 +58,7 @@
     &:hover
       color: $primary-color
 
-.topic.topic_showed
+.topic_showed
   .topic
     &__type
       margin-top: 100px
@@ -69,3 +69,11 @@
 
     &__leave-comment
       margin: 51px $topic-field 15px
+
+.topic_clickable
+  cursor: pointer
+
+  &:hover
+    .topic
+      &__title, &__text
+        color: $secondary-color
