@@ -1,6 +1,10 @@
 @use 'common.sass' as *
 
 .section
+  width: 100%
+  max-width: $base-width
+  margin-left: auto
+  margin-right: auto
   margin-bottom: 100px
 
   &_horizontal-field
@@ -29,3 +33,6 @@
 
   &_last
     margin-bottom: 0
+
+  &_wide
+    max-width: none
