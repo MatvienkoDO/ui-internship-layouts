@@ -16,25 +16,22 @@
     font-weight: 300
     text-transform: uppercase
 
-  &__title
+  &__title, &__text
     display: block
-    margin-top: 27px
-
+    transition: .25s
     color: $primary-color
     font-family: 'Playfair Display', serif
-    font-size: 30px
     font-weight: 400
+
+  &__title
+    margin-top: 27px
+    font-size: 30px
 
   &__text
     $line-height: 24px
 
-    display: block
     margin-top: 33px
-
-    color: $primary-color
-    font-family: 'Playfair Display', serif
     font-size: 14px
-    font-weight: 400
     line-height: $line-height
 
     &_short
