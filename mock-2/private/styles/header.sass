@@ -3,8 +3,12 @@
 .header
   padding: 65px $field
   display: flex
-
   text-transform: uppercase
+
+  @media (min-width: 1201px)
+    width: $base-width
+    margin-left: auto
+    margin-right: auto
 
   &__name
     margin-right: auto
@@ -31,3 +35,14 @@
 
     &:hover
       color: $secondary-color
+
+    @media (max-width: 950px)
+      margin-left: 50px
+
+    @media (max-width: 750px)
+      margin-left: 20px
+
+    @media (max-width: 650px)
+      display: none
+
+    //todo: hamburger
