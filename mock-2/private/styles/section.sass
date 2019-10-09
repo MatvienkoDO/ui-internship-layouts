@@ -12,9 +12,37 @@
       padding-left: $field
       padding-right: $field
 
+      @media (max-width: 500px)
+        padding-left: $field * 0.5
+        padding-right: $field * 0.5
+
+      @media (max-width: 360px)
+        padding-left: $field * 0.2
+        padding-right: $field * 0.2
+
     &_big
       padding-left: $big-field
       padding-right: $big-field
+
+      @media (max-width: 600px)
+        $new-big-field: ($big-field - $field) * 0.25 + $field
+
+        padding-left: $new-big-field
+        padding-right: $new-big-field
+
+      @media (max-width: 500px)
+        $new-field: $field * 0.5
+        $new-big-field: ($big-field - $new-field) * 0.25 + $new-field
+
+        padding-left: $new-big-field
+        padding-right: $new-big-field
+
+      @media (max-width: 360px)
+        $new-field: $field * 0.2
+        $new-big-field: ($big-field - $new-field) * 0.25 + $new-field
+        
+        padding-left: $new-big-field
+        padding-right: $new-big-field
 
   &_vertical-field
     &_small
