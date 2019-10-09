@@ -11,3 +11,16 @@ $base-width: 1200px
 $primary-color: #626262
 $secondary-color: #b4ad9e
 $gray: #f0f0f0
+
+@mixin -common-font()
+  font-family: 'Playfair Display', serif
+  font-weight: 400
+  line-height: 24px
+
+@mixin primary-text()
+  @include -common-font()
+  font-size: 30px
+
+@mixin secondary-text()
+  @include -common-font()
+  font-size: 14px
