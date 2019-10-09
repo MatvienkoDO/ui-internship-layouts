@@ -20,18 +20,16 @@
     display: block
     transition: .25s
     color: $primary-color
-    font-family: 'Playfair Display', serif
-    font-weight: 400
 
   &__title
     margin-top: 27px
-    font-size: 30px
+    @include primary-text()
 
   &__text
     $line-height: 24px
 
     margin-top: 33px
-    font-size: 14px
+    @include secondary-text()
     line-height: $line-height
 
     &_short

@@ -21,9 +21,8 @@
   &__caption
     text-align: center
     color: #333333
-    font-family: 'Playfair Display', serif
-    font-size: 30px
-    font-weight: 400
+    @include primary-text()
+    line-height: normal
     letter-spacing: 0.75px
 
   &__email
@@ -41,14 +40,7 @@
     flex-grow: 1
     
     color: $primary-color
-    font-family: 'Playfair Display', serif
-    font-size: 14px
-    font-weight: 400
-    line-height: 24px
-
-    &::placeholder
-      color: $primary-color
-      font-size: 14px
+    @include secondary-text()
 
   &__submit
     width: 32px
