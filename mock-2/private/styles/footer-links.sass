@@ -7,6 +7,10 @@
   display: flex
   align-items: center
 
+  @media (max-width: 450px)
+    margin-left: -4px
+    margin-right: -4px
+
   &__link
     margin-left: 9px
     margin-right: 9px
@@ -20,10 +24,17 @@
     font-weight: 400
     line-height: 24px
 
+    @media (max-width: 450px)
+      margin-left: 4px
+      margin-right: 4px
+
     &:hover
       color: $secondary-color
 
     &_icon
+      &_facebook, &_twitter, &_instagram
+        flex-shrink: 0
+
       &_facebook
         width: 8px
         height: 14px
