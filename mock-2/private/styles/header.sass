@@ -48,7 +48,51 @@
     @media (max-width: 750px)
       margin-left: 20px
 
-    @media (max-width: 650px)
-      display: none
+  &__navigation
+    transition: .25s
 
-    //todo: hamburger
+    &-state, &-open
+      display: none
+    
+    &-close
+      position: fixed
+      top: 0
+      bottom: 0
+      right: 0
+      background-color: lightgray
+      transition: .2s
+      width: 0
+      opacity: 0
+
+@media (max-width: 650px)
+  .header
+    &__navigation
+      position: fixed
+      top: 0
+      bottom: 0
+      right: 0
+      background-color: gray
+      opacity: 0.95
+      box-shadow: 0 0 10px black
+      display: flex
+      flex-direction: column
+      width: 0
+
+      &-open
+        display: block
+
+    &__topic-type
+      margin-left: 0
+      flex-grow: 1
+      color: white
+      display: flex
+      justify-content: center
+      align-items: center
+
+    &__navigation-state:checked ~ .header
+      &__navigation
+        width: 80%
+
+        &-close
+          width: 100%
+          opacity: 0.95
