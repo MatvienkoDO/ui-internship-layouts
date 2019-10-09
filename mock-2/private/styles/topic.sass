@@ -67,8 +67,15 @@
       padding-left: $topic-field
       padding-right: $topic-field
 
+      @media (max-width: 800px)
+        padding-left: 0
+        padding-right: 0
+
     &__leave-comment
       margin: 51px $topic-field 15px
+
+      @media (max-width: 800px)
+        margin-left: 0
 
 .topic_clickable
   cursor: pointer
