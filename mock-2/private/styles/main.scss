@@ -1,12 +1,12 @@
 @use 'reset.css';
 
-@use 'header.sass';
-@use 'section.sass';
-@use 'topic.sass';
-@use 'topics-list.sass';
-@use 'subscription.sass';
-@use 'button.sass';
-@use 'social.sass';
+@use 'header.scss';
+@use 'section.scss';
+@use 'topic.scss';
+@use 'topics-list.scss';
+@use 'subscription.scss';
+@use 'button.scss';
+@use 'social.scss';
 
 * {
   box-sizing: border-box;
