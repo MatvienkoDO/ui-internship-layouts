@@ -15,7 +15,7 @@ $gray: #f0f0f0;
 @mixin -common-font($size) {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  line-height: 24px;
+  line-height: normal;
   font-size: $size;
 }
 
@@ -25,4 +25,5 @@ $gray: #f0f0f0;
 
 @mixin secondary-text {
   @include -common-font(14px);
+  line-height: 24px;
 }
