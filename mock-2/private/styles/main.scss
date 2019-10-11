@@ -1,0 +1,24 @@
+@use 'reset.css';
+
+@use 'header.scss';
+@use 'section.scss';
+@use 'topic.scss';
+@use 'topics-list.scss';
+@use 'subscription.scss';
+@use 'button.scss';
+@use 'social.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-space-filler {
+  flex-grow: 1;
+}

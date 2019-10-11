@@ -1,0 +1,69 @@
+@use 'common.scss' as *;
+
+.section {
+  width: $base-width;
+  max-width: 100%;
+  margin-bottom: 100px;
+
+  @media (max-width: 550px) {
+    margin-bottom: 50px;
+  }
+
+  &_horizontal-field {
+    &_regular {
+      padding-left: $field;
+      padding-right: $field;
+
+      @media (max-width: 600px) {
+        padding-left: $field-small;
+        padding-right: $field-small;
+      }
+
+      @media (max-width: 360px) {
+        padding-left: $field-tiny;
+        padding-right: $field-tiny;
+      }
+    }
+
+    &_big {
+      padding-left: $big-field;
+      padding-right: $big-field;
+
+      @media (max-width: 600px) {
+        padding-left: $big-field-small;
+        padding-right: $big-field-small;
+      }
+
+      @media (max-width: 360px) {
+        padding-left: $big-field-tiny;
+        padding-right: $big-field-tiny;
+      }
+    }
+  }
+
+  &_vertical-field {
+    &_small {
+      padding-top: 73px;
+      padding-bottom: 73px;
+    }
+
+    &_tiny {
+      padding-top: 43px;
+      padding-bottom: 43px;
+    }
+  }
+
+  &_centering-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_last {
+    margin-bottom: 0;
+  }
+
+  &_wide {
+    width: 100%;
+    background-color: $gray;
+  }
+}

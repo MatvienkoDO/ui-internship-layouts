@@ -1,0 +1,122 @@
+@use 'common.scss' as *;
+
+.header {
+  width: $base-width;
+  max-width: 100%;
+  padding: 65px $field;
+  display: flex;
+  text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    padding-left: $field-small;
+    padding-right: $field-small;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: 360px) {
+    padding-left: $field-tiny;
+    padding-right: $field-tiny;
+  }
+
+  &__name {
+    margin-right: auto;
+    cursor: default;
+
+    @include primary-text;
+    font-family: "Inconsolata", monospace;
+    color: black;
+    letter-spacing: 6px;
+  }
+
+  &__topic-type {
+    margin-left: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .25s;
+
+    @include secondary-text;
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+    @media (max-width: 950px) {
+      margin-left: 50px;
+    }
+
+    @media (max-width: 750px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__navigation {
+    transition: .25s;
+    display: flex;
+    align-items: center;
+
+    &-state, &-open {
+      display: none;
+    }
+
+    &-open {
+      align-items: center;
+      cursor: pointer;
+      @include secondary-text;
+    }
+
+    &-close {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: lightgray;
+      transition: .2s;
+      width: 0;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    &__navigation {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 200%;
+      right: -200%;
+      background-color: gray;
+      opacity: 0.95;
+      box-shadow: 0 0 10px black;
+      align-items: stretch;
+      flex-direction: column;
+
+      &-open {
+        display: flex;
+      }
+    }
+
+    &__topic-type {
+      margin-left: 0;
+      flex-grow: 1;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__navigation-state:checked ~ .header {
+      &__navigation {
+        left: 20%;
+        right: 0;
+
+        &-close {
+          width: 100%;
+          opacity: 0.95;
+        }
+      }
+    }
+  }
+}
