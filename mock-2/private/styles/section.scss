@@ -3,8 +3,6 @@
 .section {
   width: $base-width;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 100px;
 
   @media (max-width: 550px) {
