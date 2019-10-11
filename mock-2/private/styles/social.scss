@@ -1,50 +1,61 @@
-@use 'common.sass' as *
+@use 'common.sass' as *;
 
-.social
-  margin-left: -9px
-  margin-right: -9px
+.social {
+  margin-left: -9px;
+  margin-right: -9px;
 
-  display: flex
-  align-items: center
+  display: flex;
+  align-items: center;
 
-  @media (max-width: 450px)
-    margin-left: -4px
-    margin-right: -4px
+  @media (max-width: 450px) {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
 
-  &__item
-    margin-left: 9px
-    margin-right: 9px
-    cursor: default
-    transition: .25s
-    text-decoration: none
+  &__item {
+    margin-left: 9px;
+    margin-right: 9px;
+    cursor: default;
+    transition: .25s;
+    text-decoration: none;
 
-    color: black
-    @include secondary-text()
+    color: black;
+    @include secondary-text;
 
-    @media (max-width: 450px)
-      margin-left: 4px
-      margin-right: 4px
+    @media (max-width: 450px) {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
 
-    &_link
-      cursor: pointer
+    &_link {
+      cursor: pointer;
 
-      &:hover
-        color: $secondary-color
+      &:hover {
+        color: $secondary-color;
+      }
+    }
 
-    &_icon
-      &_facebook, &_twitter, &_instagram
-        flex-shrink: 0
-        width: 20px
-        height: 20px
-        background-size: contain
-        background-repeat: no-repeat
-        background-position: center
+    &_icon {
+      &_facebook, &_twitter, &_instagram {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
 
-      &_facebook
-        background-image: url('assets/social__link_icon_facebook.svg')
+      &_facebook {
+        background-image: url("assets/social__link_icon_facebook.svg");
+      }
 
-      &_twitter
-        background-image: url('assets/social__link_icon_twitter.svg')
+      &_twitter {
+        background-image: url("assets/social__link_icon_twitter.svg");
+      }
 
-      &_instagram
-        background-image: url('assets/social__link_icon_instagram.svg')
+      &_instagram {
+        background-image: url("assets/social__link_icon_instagram.svg");
+      }
+    }
+  }
+}

@@ -1,18 +1,23 @@
-.topics-list
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-  margin-top: -110px
+.topics-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -110px;
 
-  @media (max-width: 1100px)
-    justify-content: center
+  @media (max-width: 1100px) {
+    justify-content: center;
+  }
 
-  &__item
-    width: 46.67%
-    margin-top: 110px
+  &__item {
+    width: 46.67%;
+    margin-top: 110px;
 
-    @media (max-width: 1100px)
-      width: 530px
+    @media (max-width: 1100px) {
+      width: 530px;
+    }
 
-    @media (max-width: 900px)
-      width: 100%
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+}

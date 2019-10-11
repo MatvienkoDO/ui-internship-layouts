@@ -1,57 +1,73 @@
-@use 'common.sass' as *
+@use 'common.sass' as *;
 
-.section
-  width: $base-width
-  max-width: 100%
-  margin-left: auto
-  margin-right: auto
-  margin-bottom: 100px
+.section {
+  width: $base-width;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 
-  @media (max-width: 550px)
-    margin-bottom: 50px
+  @media (max-width: 550px) {
+    margin-bottom: 50px;
+  }
 
-  &_horizontal-field
-    &_regular
-      padding-left: $field
-      padding-right: $field
+  &_horizontal-field {
+    &_regular {
+      padding-left: $field;
+      padding-right: $field;
 
-      @media (max-width: 600px)
-        padding-left: $field-small
-        padding-right: $field-small
+      @media (max-width: 600px) {
+        padding-left: $field-small;
+        padding-right: $field-small;
+      }
 
-      @media (max-width: 360px)
-        padding-left: $field-tiny
-        padding-right: $field-tiny
+      @media (max-width: 360px) {
+        padding-left: $field-tiny;
+        padding-right: $field-tiny;
+      }
+    }
 
-    &_big
-      padding-left: $big-field
-      padding-right: $big-field
+    &_big {
+      padding-left: $big-field;
+      padding-right: $big-field;
 
-      @media (max-width: 600px)
-        padding-left: $big-field-small
-        padding-right: $big-field-small
+      @media (max-width: 600px) {
+        padding-left: $big-field-small;
+        padding-right: $big-field-small;
+      }
 
-      @media (max-width: 360px)
-        padding-left: $big-field-tiny
-        padding-right: $big-field-tiny
+      @media (max-width: 360px) {
+        padding-left: $big-field-tiny;
+        padding-right: $big-field-tiny;
+      }
+    }
+  }
 
-  &_vertical-field
-    &_small
-      padding-top: 73px
-      padding-bottom: 73px
+  &_vertical-field {
+    &_small {
+      padding-top: 73px;
+      padding-bottom: 73px;
+    }
 
-    &_tiny
-      padding-top: 43px
-      padding-bottom: 43px
+    &_tiny {
+      padding-top: 43px;
+      padding-bottom: 43px;
+    }
+  }
 
-  &_gray
-    background-color: $gray
+  &_gray {
+    background-color: $gray;
+  }
 
-  &_centering-content
-    text-align: center
+  &_centering-content {
+    text-align: center;
+  }
 
-  &_last
-    margin-bottom: 0
+  &_last {
+    margin-bottom: 0;
+  }
 
-  &_wide
-    width: 100%
+  &_wide {
+    width: 100%;
+  }
+}

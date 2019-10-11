@@ -1,51 +1,59 @@
-@use 'common.sass' as *
-  
-.subscription
-  display: inline-block
-  width: 400px
-  height: 140px
+@use 'common.sass' as *;
 
-  @media (max-width: 500px)
-    width: 300px
+.subscription {
+  display: inline-block;
+  width: 400px;
+  height: 140px;
 
-  @media (max-width: 370px)
-    width: 250px
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 
-  &__label
-    width: 100%
-    height: 100%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+  @media (max-width: 370px) {
+    width: 250px;
+  }
 
-  &__caption
-    text-align: center
-    color: #333333
-    @include primary-text()
-    line-height: normal
-    letter-spacing: 0.75px
+  &__label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-  &__email
-    padding-bottom: 9px
-    border-bottom: 2px solid black
-    display: flex
-    justify-content: space-between
-    align-items: center
+  &__caption {
+    text-align: center;
+    color: #333333;
+    @include primary-text;
+    line-height: normal;
+    letter-spacing: .75px;
+  }
 
-  &__email-input
-    border-width: 0
-    background-color: transparent
-    padding: 0
-    outline: none
-    flex-grow: 1
+  &__email {
+    padding-bottom: 9px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__email-input {
+    border-width: 0;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    flex-grow: 1;
     
-    color: $primary-color
-    @include secondary-text()
+    color: $primary-color;
+    @include secondary-text;
+  }
 
-  &__submit
-    width: 32px
-    height: 17px
-    border-width: 0
-    background-color: transparent
-    background-image: url('assets/subscription__submit_image_arrow.png')
-    cursor: pointer
+  &__submit {
+    width: 32px;
+    height: 17px;
+    border-width: 0;
+    background-color: transparent;
+    background-image: url("assets/subscription__submit_image_arrow.png");
+    cursor: pointer;
+  }
+}

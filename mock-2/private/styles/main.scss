@@ -1,20 +1,23 @@
-@use 'reset.css'
+@use 'reset.css';
 
-@use 'header.sass'
-@use 'section.sass'
-@use 'topic.sass'
-@use 'topics-list.sass'
-@use 'subscription.sass'
-@use 'button.sass'
-@use 'social.sass'
+@use 'header.sass';
+@use 'section.sass';
+@use 'topic.sass';
+@use 'topics-list.sass';
+@use 'subscription.sass';
+@use 'button.sass';
+@use 'social.sass';
 
-*
-  box-sizing: border-box
+* {
+  box-sizing: border-box;
+}
 
-.body
-  min-height: 100vh
-  display: flex
-  flex-direction: column
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-.empty-space-filler
-  flex-grow: 1
+.empty-space-filler {
+  flex-grow: 1;
+}
