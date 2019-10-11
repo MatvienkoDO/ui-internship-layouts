@@ -58,9 +58,17 @@
 
   &__navigation {
     transition: .25s;
+    display: flex;
+    align-items: center;
 
     &-state, &-open {
       display: none;
+    }
+
+    &-open {
+      align-items: center;
+      cursor: pointer;
+      @include secondary-text;
     }
 
     &-close {
@@ -87,11 +95,11 @@
       background-color: gray;
       opacity: 0.95;
       box-shadow: 0 0 10px black;
-      display: flex;
+      align-items: stretch;
       flex-direction: column;
 
       &-open {
-        display: block;
+        display: flex;
       }
     }
 
