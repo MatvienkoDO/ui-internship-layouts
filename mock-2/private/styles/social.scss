@@ -43,6 +43,10 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+
+        &:hover {
+          filter: invert(100%) sepia(12%) saturate(302%) brightness(100%) contrast(150%);
+        }
       }
 
       &_facebook {
