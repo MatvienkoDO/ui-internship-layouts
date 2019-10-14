@@ -1,0 +1,60 @@
+@import 'colors.scss';
+
+.article {
+  &__type {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $secondary-color;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    color: $primary-color;
+    font-family: 'Exo', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1.6px;
+
+    &_dots_three::after, &_dots_four::after {
+      margin-left: 5px;
+    }
+
+    &_dots_three::after {
+      content: '...';
+    }
+
+    &_dots_four::after {
+      content: '....';
+    }
+
+    &_dots_highlighted::after {
+      color: $secondary-color;
+    }
+  }
+
+  &__text {
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    opacity: 0.66;
+    color: $primary-color;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.64px;
+
+    &_next-paragraph {
+      margin-top: 25px;
+    }
+  }
+}

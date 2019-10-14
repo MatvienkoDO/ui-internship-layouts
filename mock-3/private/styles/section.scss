@@ -1,5 +1,91 @@
+@import 'colors.scss';
+
 .section {
+  $padding-side: 150px;
+  padding: 100px $padding-side;
+
   &_height_viewport {
     height: 100vh;
+  }
+
+  &_vertical-indent {
+    &_none {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &_big {
+      padding-top: 178px;
+      padding-bottom: 178px;
+    }
+  }
+
+  &_horizontal-indent {
+    &_none {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  $decoration-right-simple-width: 570px;
+  &_decoration_right-simple {
+    padding-right: $decoration-right-simple-width + $padding-side;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__right-simple-decoration {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: $decoration-right-simple-width;
+    background-color: #ededed;
+  }
+
+  &__right-simple-triangle-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: $decoration-right-simple-width;
+    height: $decoration-right-simple-width;
+    border: ($decoration-right-simple-width / 2) solid $secondary-color;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    opacity: 0.8;
+  }
+
+  @media (min-width: 1700px) {
+    $decoration-right-simple-width: 750px;
+    &_decoration_right-simple {
+      padding-right: $decoration-right-simple-width + $padding-side;
+    }
+  
+    &__right-simple-decoration {
+      width: $decoration-right-simple-width;
+    }
+  
+    &__right-simple-triangle-decoration {
+      width: $decoration-right-simple-width;
+      height: $decoration-right-simple-width;
+      border-width: ($decoration-right-simple-width / 2);
+    }
+  }
+
+  @media (max-width: 1300px) {
+    $decoration-right-simple-width: 350px;
+    &_decoration_right-simple {
+      padding-right: $decoration-right-simple-width + $padding-side;
+    }
+  
+    &__right-simple-decoration {
+      width: $decoration-right-simple-width;
+    }
+  
+    &__right-simple-triangle-decoration {
+      width: $decoration-right-simple-width;
+      height: $decoration-right-simple-width;
+      border-width: ($decoration-right-simple-width / 2);
+    }
   }
 }
