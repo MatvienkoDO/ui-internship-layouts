@@ -33,7 +33,7 @@
 
   $decoration-right-simple-width: 570px;
   &_decoration {
-    &_right-simple, &_things {
+    &_right-simple, &_things, &_left-laptop {
       position: relative;
       overflow: hidden;
     }
@@ -45,6 +45,18 @@
     &_things {
       padding-top: 138px;
       padding-bottom: 184px;
+    }
+
+    &_left-laptop {
+      padding: 140px 150px 145px 730px;
+
+      @media (max-width: 1350px) {
+        padding: 130px 100px 130px 600px;
+      }
+
+      @media (max-width: 1200px) {
+        padding: 100px 60px 100px 510px;
+      }
     }
   }
 
@@ -122,6 +134,44 @@
     &3 {
       right: 48px;
       bottom: 0;
+    }
+  }
+
+  &__left-laptop-triangle, &__decoration-laptop {
+    position: absolute;
+  }
+
+  $left-laptop-triangle-width: 610px;
+  &__left-laptop-triangle {
+    left: 0;
+    bottom: 0;
+    width: $left-laptop-triangle-width;
+    height: $left-laptop-triangle-width;
+    border: ($left-laptop-triangle-width / 2) solid $secondary-color;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    opacity: 0.8;
+
+    @media (max-width: 1200px) {
+      $left-laptop-triangle-width: 500px;
+      width: $left-laptop-triangle-width;
+      height: $left-laptop-triangle-width;
+      border-width: ($left-laptop-triangle-width / 2);
+    }
+  }
+
+  &__decoration-laptop {
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 1350px) {
+      left: 10px;
+      width: 550px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 480px;
     }
   }
 }
