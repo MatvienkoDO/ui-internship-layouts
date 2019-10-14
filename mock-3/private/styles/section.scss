@@ -41,7 +41,7 @@
 
   $decoration-right-simple-width: 570px;
   &_decoration {
-    &_right-simple, &_things, &_left-laptop {
+    &_right-simple, &_things, &_left-laptop, &_browser-bottom {
       position: relative;
       overflow: hidden;
     }
@@ -65,6 +65,12 @@
       @media (max-width: 1200px) {
         padding: 100px 60px 100px 510px;
       }
+    }
+
+    &_browser-bottom {
+      padding-left: calc(50% - 325px);
+      padding-right: calc(50% - 325px);
+      padding-bottom: 460px;
     }
   }
 
@@ -181,5 +187,12 @@
     @media (max-width: 1200px) {
       width: 480px;
     }
+  }
+
+  &__decoration-browser, &__decoration-browser-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
