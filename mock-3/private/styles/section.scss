@@ -27,8 +27,16 @@
     }
   }
 
-  &_background_dark {
-    background-color: #f6f5f3;
+  &_background {
+    &_dark {
+      background-color: #f6f5f3;
+    }
+
+    &_triangles {
+      background-color: black;
+      background-image: url('assets/section-background-triangles.png');
+      background-position: center;
+    }
   }
 
   $decoration-right-simple-width: 570px;

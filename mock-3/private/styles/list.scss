@@ -1,14 +1,28 @@
 .list {
-  padding-top: 70px;
   margin-left: -20px;
   margin-right: -20px;
 
   display: flex;
 
+  &_align-at-center {
+    align-items: center;
+  }
+
+  &_top-indented {
+    padding-top: 70px;
+  }
+
   &__element {
     margin-left: 20px;
     margin-right: 20px;
 
+    flex-basis: 1px;
     flex-grow: 1;
+
+    &_initial-size {
+      flex-grow: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

@@ -15,6 +15,11 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3.2px;
+
+    &_small {
+      text-transform: none;
+      letter-spacing: normal;
+    }
   }
 
   &__title {
@@ -33,6 +38,10 @@
       font-size: 22px;
       line-height: normal;
       letter-spacing: 0.88px;
+    }
+
+    &_light {
+      color: white;
     }
 
     &_dots_three::after, &_dots_four::after {
@@ -66,6 +75,13 @@
 
     &_small {
       margin-top: 10px;
+    }
+
+    &_light {
+      color: white;
+      opacity: 0.5;
+      font-weight: 400;
+      font-style: italic;
     }
 
     &_next-paragraph {
