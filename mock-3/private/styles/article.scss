@@ -1,6 +1,10 @@
 @import 'colors.scss';
 
 .article {
+  &_text-centered {
+    text-align: center;
+  }
+
   &__type {
     margin-top: 0;
     margin-bottom: 0;
@@ -24,6 +28,12 @@
     font-weight: 500;
     line-height: 50px;
     letter-spacing: 1.6px;
+
+    &_small {
+      font-size: 22px;
+      line-height: normal;
+      letter-spacing: 0.88px;
+    }
 
     &_dots_three::after, &_dots_four::after {
       margin-left: 5px;
@@ -53,6 +63,10 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.64px;
+
+    &_small {
+      margin-top: 10px;
+    }
 
     &_next-paragraph {
       margin-top: 25px;
