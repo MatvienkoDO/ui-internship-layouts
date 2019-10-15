@@ -114,12 +114,15 @@
     }
 
     &_link {
-      text-decoration: underline;
       cursor: pointer;
 
       &:hover {
         filter: brightness(50%);
       }
+    }
+
+    &_underlined {
+      text-decoration: underline;
     }
   }
 }
