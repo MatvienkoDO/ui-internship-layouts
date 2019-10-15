@@ -1,6 +1,7 @@
 .list {
-  margin-left: -20px;
-  margin-right: -20px;
+  $indent: 20px;
+  margin-left: -$indent;
+  margin-right: -$indent;
 
   display: flex;
 
@@ -14,17 +15,21 @@
     }
   }
 
+  &_justified {
+    &_evenly {
+      justify-content: space-evenly;
+    }
+  }
+
   &__element {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: $indent;
+    margin-right: $indent;
 
     flex-basis: 1px;
     flex-grow: 1;
 
     &_initial-size {
       flex-grow: 0;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
