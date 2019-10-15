@@ -8,8 +8,10 @@
     align-items: center;
   }
 
-  &_top-indented {
-    padding-top: 70px;
+  &_top-indent {
+    &_big {
+      padding-top: 70px;
+    }
   }
 
   &__element {
