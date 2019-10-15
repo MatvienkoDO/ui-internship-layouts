@@ -79,12 +79,20 @@
     &_light {
       color: white;
       opacity: 0.5;
+    }
+
+    &_italic {
       font-weight: 400;
       font-style: italic;
     }
 
     &_next-paragraph {
       margin-top: 25px;
+    }
+
+    &_link {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }

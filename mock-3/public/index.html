@@ -106,25 +106,25 @@
           <img src="assets/article-default-logo.svg" alt="gray square">
           <h3 class="article__title article__title_small article__title_light">Jonathon Doe</h3>
           <p class="article__type article__type_small">Co Founder</p>
-          <p class="article__text article__text_small article__text_light">“Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id gravida at eget metus. Etiasem malesuada magn”</p>
+          <p class="article__text article__text_small article__text_light article__text_italic">“Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id gravida at eget metus. Etiasem malesuada magn”</p>
         </article>
 
         <article class="list__element article article_text-centered">
           <img src="assets/article-default-logo.svg" alt="gray square">
           <h3 class="article__title article__title_small article__title_light">Jonathon Doe</h3>
           <p class="article__type article__type_small">Co Founder</p>
-          <p class="article__text article__text_small article__text_light">“Pellentesque ornare sem lacinia quam. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn”</p>
+          <p class="article__text article__text_small article__text_light article__text_italic">“Pellentesque ornare sem lacinia quam. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn”</p>
         </article>
 
         <article class="list__element article article_text-centered">
           <img src="assets/article-default-logo.svg" alt="gray square">
           <h3 class="article__title article__title_small article__title_light">Jonathon Doe</h3>
           <p class="article__type article__type_small">Co Founder</p>
-          <p class="article__text article__text_small article__text_light">“Aenean eu leo quam. Pellentesque ornare sem lacinia qua emere wancerid elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn”</p>
+          <p class="article__text article__text_small article__text_light article__text_italic">“Aenean eu leo quam. Pellentesque ornare sem lacinia qua emere wancerid elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn”</p>
         </article>
       </div>
 
-      <div class="list list_top-indent_big list_align-at-center list_justified_evenly">
+      <div class="list list_top-indent_big list_align_center list_justified_evenly">
         <img class="list__element list__element_initial-size company-logo"
           src="assets/partner-hits.png" alt="hits company logo. Letters 'hits'">
         <img class="list__element list__element_initial-size company-logo"
@@ -147,6 +147,38 @@
 
       <img class="section__decoration-browser" src="assets/browser-safari.png" alt="safari window">
       <img class="section__decoration-browser-content" src="assets/browser-content.png" alt="empty browser content">
+    </section>
+
+    <section class="section section_background_accent">
+      <article class="article article_text-centered">
+        <p class="article__type">NEW FEATURES</p>
+        <h2 class="article__title article__title_dots_three article__title_light">Over 1000 designers are using</h2>
+
+        <form
+          class="list list_top-indent_small list_align_end"
+          name="try-now"
+          action="/try-now"
+          target="_blank"
+          method="POST">
+
+          <input class="list__element form-field" name="fullname" type="text" placeholder="full name" required>
+          <input class="list__element form-field" name="email" type="email" placeholder="your email" required>
+          <input class="list__element form-field" name="password" type="password" autocomplete="off" placeholder="password" required>
+          <div class="list__element form-field-wrapper">
+            <p class="form-field-wrapper__caption">30 days free trial for all.</p>
+            <img class="form-field-wrapper__decoration" src="assets/form-field-wrapper-decoration.png"
+              alt="arrow from caption to submit button">
+            <input class="form-field form-field_submit" type="submit" value="try now">
+          </div>
+        </form>
+
+        <p class="article__text">
+          <span class="article__text article__text_light">By Signing up you agree to our </span>
+          <a class="article__text article__text_light article__text_link" href="/terms-and-services" target="_blank">
+            terms & Services.
+          </a>
+        </p>
+      </article>
     </section>
   </body>
 </html>

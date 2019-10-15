@@ -5,13 +5,23 @@
 
   display: flex;
 
-  &_align-at-center {
-    align-items: center;
+  &_align {
+    &_center {
+      align-items: center;
+    }
+
+    &_end {
+      align-items: flex-end;
+    }
   }
 
   &_top-indent {
     &_big {
       padding-top: 70px;
+    }
+
+    &_small {
+      padding-top: 33px;
     }
   }
 
@@ -19,13 +29,17 @@
     &_evenly {
       justify-content: space-evenly;
     }
+
+    &_between {
+      justify-content: space-between;
+    }
   }
 
   &__element {
     margin-left: $indent;
     margin-right: $indent;
 
-    flex-basis: 1px;
+    flex-basis: 100px;
     flex-grow: 1;
 
     &_initial-size {
