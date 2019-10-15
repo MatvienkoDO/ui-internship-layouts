@@ -29,12 +29,13 @@
 
   &__title {
     margin: 0;
+    @include common-font;
     color: $primary-color;
-    font-family: 'Exo', sans-serif;
     font-size: 60px;
     font-weight: 100;
     line-height: 75px;
     text-align: center;
+    letter-spacing: normal;
   }
 
   &__play-pause {
@@ -65,10 +66,8 @@
     background-color: $secondary-color;
     @include clickable;
 
+    @include common-font;
     color: white;
-    font-family: 'Exo', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3.2px;
   }
@@ -76,11 +75,10 @@
   &__remark {
     margin: 19px 0 0;
   
+    @include common-font;
     opacity: 0.6;
     color: $primary-color;
-    font-family: 'Exo', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.56px;
+    letter-spacing: .56px;
   }
 }

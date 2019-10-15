@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'mixins.scss';
 
 .article {
   &_text-centered {
@@ -9,9 +10,8 @@
     margin-top: 0;
     margin-bottom: 0;
 
+    @include common-font;
     color: $secondary-color;
-    font-family: 'Exo', sans-serif;
-    font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -26,8 +26,8 @@
     margin-top: 15px;
     margin-bottom: 0;
 
+    @include common-font;
     color: $primary-color;
-    font-family: 'Exo', sans-serif;
     font-size: 40px;
     font-weight: 500;
     line-height: 50px;
@@ -89,13 +89,11 @@
     margin-top: 45px;
     margin-bottom: 0;
 
+    @include common-font;
     opacity: 0.66;
     color: $primary-color;
-    font-family: 'Exo', sans-serif;
-    font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0.64px;
 
     &_small {
       margin-top: 10px;
