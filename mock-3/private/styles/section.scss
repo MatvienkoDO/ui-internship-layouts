@@ -211,6 +211,7 @@
   &__decoration-right-top-triangle {
     $decoration-right-top-size: 325px;
 
+    z-index: -1;
     position: absolute;
     top: 0;
     right: 0;
