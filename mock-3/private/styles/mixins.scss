@@ -1,0 +1,20 @@
+@mixin clickable {
+  transition: .2s;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px black;
+  }
+
+  &:active {
+    box-shadow: 0 0 20px black;
+  }
+}
+
+@mixin common-font {
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .64px;
+}

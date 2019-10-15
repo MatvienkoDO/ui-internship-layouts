@@ -1,0 +1,128 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+.article {
+  &_text-centered {
+    text-align: center;
+  }
+
+  &__type {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include common-font;
+    color: $secondary-color;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+
+    &_small {
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    @include common-font;
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1.6px;
+
+    &_small {
+      font-size: 22px;
+      line-height: normal;
+      letter-spacing: 0.88px;
+    }
+
+    &_light {
+      color: white;
+    }
+
+    &_dots_three::after, &_dots_four::after {
+      margin-left: 5px;
+    }
+
+    &_dots_three::after {
+      content: '...';
+    }
+
+    &_dots_four::after {
+      content: '....';
+    }
+
+    &_dots_highlighted::after {
+      color: $secondary-color;
+    }
+
+    &_special {
+      color: #2c2f49;
+      font-family: 'Lato', sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 50px;
+    }
+
+    &_triangle-background {
+      background-image: url('assets/triangle-background.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin: 0;
+      padding-bottom: 4px;
+      width: 42px;
+
+      font-family: 'Lato', sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 50px;
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    margin-top: 45px;
+    margin-bottom: 0;
+
+    @include common-font;
+    opacity: 0.66;
+    color: $primary-color;
+    font-weight: 500;
+    line-height: 26px;
+
+    &_small {
+      margin-top: 10px;
+    }
+
+    &_light {
+      color: white;
+      opacity: 0.5;
+    }
+
+    &_italic {
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    &_next-paragraph {
+      margin-top: 25px;
+    }
+
+    &_link {
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(50%);
+      }
+    }
+
+    &_underlined {
+      text-decoration: underline;
+    }
+  }
+}

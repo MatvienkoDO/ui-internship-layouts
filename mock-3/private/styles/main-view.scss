@@ -1,0 +1,84 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+.main-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    @include common-font;
+    color: $primary-color;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  &__play-pause {
+    padding: 0;
+    border-width: 0;
+    margin: 40px 0;
+    width: 59px;
+    height: 59px;
+    background-color: $play-pause-background-color;
+    border-radius: 50%;
+    @include clickable;
+  }
+
+  &__play {
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+  
+  &__pause {
+    margin-top: 2px;
+    margin-left: 3px;
+  }
+
+  &__try-now {
+    padding: 19px 50px;
+    border-radius: 3px;
+    border-width: 0;
+    background-color: $secondary-color;
+    @include clickable;
+
+    @include common-font;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+  }
+
+  &__remark {
+    margin: 19px 0 0;
+  
+    @include common-font;
+    opacity: 0.6;
+    color: $primary-color;
+    font-size: 14px;
+    letter-spacing: .56px;
+  }
+}

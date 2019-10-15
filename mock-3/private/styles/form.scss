@@ -1,0 +1,80 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+.form-field {
+  min-width: 0;
+  width: 100%;
+  padding: 18px 29px;
+  border-radius: 3px;
+  border: 1px solid #fff9;
+  background-color: #f6f5f320;
+  outline: none;
+
+  @include common-font;
+  color: #fffd;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: #fffd;
+  }
+
+  &_dark {
+    border: 1px solid #4e4e5e60;
+    background-color: #a8828210;
+    
+    @include common-font;
+    color: #000000;
+    text-transform: uppercase;
+
+    &::placeholder {
+      color: #00000070;
+    }
+  }
+
+  &_submit {
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+
+    &:hover {
+      box-shadow: 0 3px 6px rgba(14, 15, 15, 0.5);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+    opacity: .07;
+  }
+
+  &-wrapper {
+    position: relative;
+
+    &__caption {
+      margin: 0 0 30px;
+      text-align: center;
+
+      @include common-font;
+      color: #fffd;
+
+      @media (max-width: 1370px) {
+        margin-left: 20px;
+      }
+    }
+
+    &__decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    padding: 15px 20px;
+  }
+}

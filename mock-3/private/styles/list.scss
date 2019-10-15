@@ -1,0 +1,54 @@
+.list {
+  $indent: 20px;
+  margin-left: -$indent;
+  margin-right: -$indent;
+
+  display: flex;
+
+  &_align {
+    &_center {
+      align-items: center;
+    }
+
+    &_end {
+      align-items: flex-end;
+    }
+  }
+
+  &_top-indent {
+    &_big {
+      padding-top: 70px;
+    }
+
+    &_small {
+      padding-top: 33px;
+    }
+  }
+
+  &_justified {
+    &_evenly {
+      justify-content: space-evenly;
+    }
+
+    &_between {
+      justify-content: space-between;
+    }
+  }
+
+  &__element {
+    margin-left: $indent;
+    margin-right: $indent;
+
+    flex-basis: 100px;
+    flex-grow: 1;
+
+    &_initial-size {
+      flex-grow: 0;
+    }
+
+    &_narrow {
+      flex-basis: 50px;
+      flex-grow: .5;
+    }
+  }
+}
