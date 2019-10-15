@@ -52,6 +52,11 @@
     }
   }
 
+  &_disabled {
+    cursor: not-allowed;
+    opacity: .07;
+  }
+
   &-wrapper {
     position: relative;
 

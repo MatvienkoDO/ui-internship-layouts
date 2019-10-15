@@ -13,7 +13,6 @@
         <video
           class="main-view__video"
           poster="https://storage.googleapis.com/coverr-public/poster/In-The-Clouds.jpg"
-          autoplay
           muted
           loop>
           <source src="https://storage.googleapis.com/coverr-main/mp4%2FIn-The-Clouds.mp4" type="video/mp4">
@@ -24,7 +23,7 @@
 
           <button class="main-view__play-pause">
             <img class="main-view__play" src="assets/main-view__play.svg" alt="play button">
-            <img class="main-view__pause" src="assets/main-view__pause.svg" alt="pause button">
+            <img class="main-view__pause" src="assets/main-view__pause.svg" alt="pause button" hidden>
           </button>
 
           <button class="main-view__try-now">Try now</button>
@@ -156,6 +155,7 @@
 
         <form
           class="list list_top-indent_small list_align_end"
+          id="tryNowForm"
           name="try-now"
           action="/try-now"
           target="_blank"
@@ -168,7 +168,12 @@
             <p class="form-field-wrapper__caption">30 days free trial for all.</p>
             <img class="form-field-wrapper__decoration" src="assets/form-field-wrapper-decoration.png"
               alt="arrow from caption to submit button">
-            <input class="form-field form-field_submit" type="submit" value="try now">
+            <input
+              class="form-field form-field_submit form-field_disabled"
+              id="tryNowSubmit"
+              type="submit"
+              value="try now"
+              disabled>
           </div>
         </form>
 
