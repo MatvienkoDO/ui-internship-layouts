@@ -1,0 +1,8 @@
+.social {
+  transition: .25s;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(75%);
+  }
+}

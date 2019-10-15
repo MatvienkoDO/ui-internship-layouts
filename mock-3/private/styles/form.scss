@@ -20,6 +20,22 @@
     color: #fffd;
   }
 
+  &_dark {
+    border: 1px solid #4e4e5e60;
+    background-color: #a8828210;
+    
+    color: #000000;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+
+    &::placeholder {
+      color: #00000070;
+    }
+  }
+
   &_submit {
     transition: .2s;
     cursor: pointer;

@@ -1,0 +1,13 @@
+.newsletter-form {
+  margin-top: 10px;
+  display: flex;
+
+  &__send {
+    margin-left: -3px;
+    width: 59px;
+
+    background-image: url('assets/newsletter-send-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

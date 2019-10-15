@@ -45,7 +45,7 @@
 
   $decoration-right-simple-width: 570px;
   &_decoration {
-    &_right-simple, &_things, &_left-laptop, &_browser-bottom {
+    &_right-simple, &_things, &_left-laptop, &_browser-bottom, &_right-top {
       position: relative;
       overflow: hidden;
     }
@@ -75,6 +75,14 @@
       padding-left: calc(50% - 325px);
       padding-right: calc(50% - 325px);
       padding-bottom: 460px;
+    }
+
+    &_right-top {
+      padding-right: 335px;
+
+      @media (max-width: 1500px) {
+        padding-right: 150px;
+      }
     }
   }
 
@@ -198,5 +206,26 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &__decoration-right-top-triangle {
+    $decoration-right-top-size: 325px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $decoration-right-top-size;
+    height: $decoration-right-top-size;
+    border: ($decoration-right-top-size / 2) solid $secondary-color;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    opacity: 0.8;
+
+    @media (max-width: 1500px) {
+      $decoration-right-top-size: 225px;
+      width: $decoration-right-top-size;
+      height: $decoration-right-top-size;
+      border-width: ($decoration-right-top-size / 2);
+    }
   }
 }

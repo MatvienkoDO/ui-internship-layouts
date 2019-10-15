@@ -45,5 +45,10 @@
     &_initial-size {
       flex-grow: 0;
     }
+
+    &_narrow {
+      flex-basis: 50px;
+      flex-grow: .5;
+    }
   }
 }
