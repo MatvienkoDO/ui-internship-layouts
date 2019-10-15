@@ -95,16 +95,23 @@
     background-color: #ededed;
   }
 
-  &__right-simple-triangle-decoration {
+  &__right-simple-triangle-decoration,
+  &__left-laptop-triangle,
+  &__decoration-right-top-triangle {
     position: absolute;
+    opacity: 0.8;
+    border-style: solid;
+    border-color: $secondary-color;
+  }
+
+  &__right-simple-triangle-decoration {
     bottom: 0;
     right: 0;
     width: $decoration-right-simple-width;
     height: $decoration-right-simple-width;
-    border: ($decoration-right-simple-width / 2) solid $secondary-color;
+    border-width: ($decoration-right-simple-width / 2);
     border-top-color: transparent;
     border-left-color: transparent;
-    opacity: 0.8;
   }
 
   @media (min-width: 1700px) {
@@ -163,20 +170,15 @@
     }
   }
 
-  &__left-laptop-triangle, &__decoration-laptop {
-    position: absolute;
-  }
-
   $left-laptop-triangle-width: 610px;
   &__left-laptop-triangle {
     left: 0;
     bottom: 0;
     width: $left-laptop-triangle-width;
     height: $left-laptop-triangle-width;
-    border: ($left-laptop-triangle-width / 2) solid $secondary-color;
+    border-width: ($left-laptop-triangle-width / 2);
     border-top-color: transparent;
     border-right-color: transparent;
-    opacity: 0.8;
 
     @media (max-width: 1200px) {
       $left-laptop-triangle-width: 500px;
@@ -187,6 +189,7 @@
   }
 
   &__decoration-laptop {
+    position: absolute;
     left: 55px;
     top: 50%;
     transform: translateY(-50%);
@@ -212,15 +215,13 @@
     $decoration-right-top-size: 325px;
 
     z-index: -1;
-    position: absolute;
     top: 0;
     right: 0;
     width: $decoration-right-top-size;
     height: $decoration-right-top-size;
-    border: ($decoration-right-top-size / 2) solid $secondary-color;
+    border-width: ($decoration-right-top-size / 2);
     border-bottom-color: transparent;
     border-left-color: transparent;
-    opacity: 0.8;
 
     @media (max-width: 1500px) {
       $decoration-right-top-size: 225px;
