@@ -34,7 +34,7 @@
     throw 'try now form is not found';
   }
 
-  tryNowForm.addEventListener('input', (e) => {
+  tryNowForm.addEventListener('input', () => {
     if (tryNowForm.checkValidity()) {
       tryNowSubmit.removeAttribute('disabled');
       tryNowSubmit.classList.remove('form-field_disabled');
