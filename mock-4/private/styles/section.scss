@@ -3,6 +3,11 @@
   padding-left: calc(50% - 550px);
   padding-right: calc(50% - 550px);
 
+  @media (max-width: 1300px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   display: flex;
   justify-content: space-between;
 
