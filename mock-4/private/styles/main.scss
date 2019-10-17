@@ -1,0 +1,11 @@
+@use 'section.scss';
+@use 'logo.scss';
+@use 'navigation.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

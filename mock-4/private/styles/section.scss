@@ -1,0 +1,42 @@
+.section {
+  padding: 100px;
+  padding-left: calc(50% - 550px);
+  padding-right: calc(50% - 550px);
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: white;
+  &_background {
+    &_secondary {
+      background-color: whitesmoke;
+    }
+
+    &_dark {
+      background-color: black;
+    }
+
+    &_image {
+      &-big, &-small {
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+      }
+
+      &-big {
+        background-image: url(assets/image-big.png);
+      }
+
+      &-small {
+        background-image: url(assets/image-small.png);
+      }
+    }
+  }
+
+  &_vertical-indent {
+    &_tiny {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
