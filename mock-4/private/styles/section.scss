@@ -44,4 +44,22 @@
       padding-bottom: 20px;
     }
   }
+
+  &__left, &__right {
+    max-width: 50%;
+  }
+
+  &__left_indented {
+    padding-right: 95px;
+  }
+
+  &__right_indented {
+    padding-left: 95px;
+  }
+
+  &_aligned {
+    &_center {
+      align-items: center;
+    }
+  }
 }

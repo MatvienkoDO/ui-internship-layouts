@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Task-4</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="section section_background_dark section_vertical-indent_tiny">
@@ -18,5 +18,43 @@
         <a class="navigation__link" href="/contact">Contact</a>
       </nav>
     </header>
+
+    <section class="section section_background_image-big section_aligned_center">
+      <div class="section__left">
+        <div class="logo logo_big"></div>
+
+        <article class="article article_indent_top article_indent_bottom">
+          <h1 class="article__title article__title_big article__title_light">modern axure template for beautiful prototypes</h1>
+          <div class="article__dash article__dash_color_alternative"></div>
+          <p class="article__text article__text_light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.
+          </p>
+        </article>
+
+        <button class="button button_transparent">Download</button>
+      </div>
+
+      <div class="section__right section__right_indented">
+        <form class="trial-form trial-form_color_light" action="/trial" method="POST" target="_blank">
+          <div class="trial-form__title">
+            <span class="trial-form__title-text">try your </span>
+            <span class="trial-form__title-text trial-form__title-text_highlighted">free</span>
+            <span class="trial-form__title-text"> trial today</span>
+          </div>
+
+          <div class="trial-form__body">
+            <input class="trial-form__field form-field" type="text" name="name" placeholder="Name" required>
+            <input class="trial-form__field form-field" type="email" name="email" placeholder="Email" required>
+            <input class="trial-form__field form-field" type="password" name="password" placeholder="Password" required>
+          </div>
+
+          <label class="trial-form__submit-wrapper" for="trial-submit">
+            <input class="trial-form__submit" id="trial-submit" type="submit" value="Get Started">
+          </label>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
