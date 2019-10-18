@@ -1,0 +1,25 @@
+@use 'colors.scss' as c;
+
+.button {
+  border: 0 solid white;
+  border-radius: 3px;
+  padding: 16px 25px;
+  background-color: c.$special;
+  cursor: pointer;
+  
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  &_transparent {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 14px 32px;
+    background-color: transparent;
+  }
+
+  &:hover {
+    filter: brightness(.7);
+  }
+}
