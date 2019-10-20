@@ -10,6 +10,11 @@
     &_bottom {
       padding-bottom: 45px;
     }
+
+    &_horizontal {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
   }
 
   &__title {
@@ -59,6 +64,20 @@
       font-family: 'Raleway', sans-serif;
       font-size: 16px;
       font-weight: 300;
+    }
+
+    &_indent {
+      &_top-big {
+        margin-top: 50px;
+      }
+
+      &_top {
+        margin-top: 25px;
+      }
+
+      &_bottom-big {
+        margin-bottom: 50px;
+      }
     }
   }
 }
