@@ -32,3 +32,9 @@
     }
   }
 }
+
+.tabs-decoration {
+  @media (max-width: 1250px) {
+    width: 250px;
+  }
+}
