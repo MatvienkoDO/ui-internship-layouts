@@ -1,0 +1,9 @@
+.picture {
+  &_match-parent-width {
+    width: 100%;
+  }
+
+  &_highlighted {
+    box-shadow: 0 15px 25px gray;
+  }
+}
