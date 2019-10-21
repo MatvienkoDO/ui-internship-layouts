@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+
+  &__element {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;  
+    }
+  }
+}

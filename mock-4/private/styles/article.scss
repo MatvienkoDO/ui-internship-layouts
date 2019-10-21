@@ -23,30 +23,70 @@
   }
 
   &_decoration {
+    &_left, &_top {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border: 2px solid c.$special;
+        border-radius: 50%;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('assets/download.svg');
+      }
+    }
+
     &_left {
       padding-left: 70px;
-      position: relative;
 
       @media (max-width: 1200px) {
         padding-left: 55px;
       }
 
       &::before {
-        content: '';
-        position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
         width: 40px;
         height: 40px;
-        border: 2px solid c.$special;
-        border-radius: 50%;
-        background-image: url('assets/download.svg');
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
       }
     }
+
+    &_top {
+      padding-top: 100px;
+
+      &::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &_lightbulb {
+      &::before {
+        background-image: url('assets/lightbulb.svg');
+      }
+    }
+
+    &_keyboard {
+      &::before {
+        background-image: url('assets/keyboard.svg');
+      }
+    }
+
+    &_lightning {
+      &::before {
+        background-image: url('assets/lightning-bolt.svg');
+      }
+    }
+  }
+
+  &_centered {
+    text-align: center;
   }
 
   &__title {
@@ -83,6 +123,10 @@
 
     &_color_alternative {
       color: white;
+    }
+
+    &_centered {
+      display: inline-block;
     }
   }
 

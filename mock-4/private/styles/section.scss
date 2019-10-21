@@ -85,6 +85,10 @@
     }
   }
 
+  &_centered {
+    justify-content: center;
+  }
+
   &_bottom-shadow {
     position: relative;
     box-shadow: 0 5px 10px -5px gray;
