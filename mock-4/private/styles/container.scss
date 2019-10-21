@@ -1,9 +1,21 @@
 .container {
   display: flex;
 
+  &_aligned {
+    &_end {
+      align-items: flex-end;
+    }
+  }
+
   &__element {
+    flex-grow: 1;
     margin-left: 16px;
     margin-right: 16px;
+
+    @media (max-width: 1000px) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
 
     &:first-child {
       margin-left: 0;
