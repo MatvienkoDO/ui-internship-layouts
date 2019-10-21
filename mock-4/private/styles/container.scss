@@ -17,6 +17,18 @@
       margin-right: 5px;
     }
 
+    &_horizontal-indent {
+      &_huge {
+        margin-left: 50px;
+        margin-right: 50px;
+
+        @media (max-width: 1000px) {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+
     &:first-child {
       margin-left: 0;
     }

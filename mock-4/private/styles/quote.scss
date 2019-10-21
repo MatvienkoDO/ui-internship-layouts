@@ -1,0 +1,56 @@
+.quote {
+  text-align: start;
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 22px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 8px;
+    padding: 23px 13px;
+
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+
+    &::after {
+      content: '';
+      border: 14px solid transparent;
+      border-left-width: 9px;
+      border-right-width: 9px;
+      border-top-color: whitesmoke;
+      position: absolute;
+      left: 26px;
+      bottom: -28px;
+    }
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    margin-right: 15px;
+  }
+
+  &__name, &__profession {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__name {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__profession {
+    color: #86878b;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
