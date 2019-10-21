@@ -112,4 +112,16 @@
   &_vertical {
     flex-direction: column;
   }
+
+  &__element {
+    &_middle {
+      align-self: center;
+    }
+
+    &_indent {
+      &_top {
+        margin-top: 10px;
+      }
+    }
+  }
 }
