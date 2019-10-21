@@ -48,3 +48,63 @@
 #tabs-state-3:checked ~ .tabs > #tabs__tab-3 {
   background-color: c.$special;
 }
+
+.tab-article {
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+#tabs-state-1 ~ #tab-article-1,
+#tabs-state-2 ~ #tab-article-2,
+#tabs-state-3 ~ #tab-article-3 {
+  // animation-name: fadeout;
+  // display: none;
+  opacity: 0;
+}
+
+#tabs-state-1:checked ~ #tab-article-1,
+#tabs-state-2:checked ~ #tab-article-2,
+#tabs-state-3:checked ~ #tab-article-3 {
+  display: block;
+  opacity: 1;
+}
+
+@keyframes fadein {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    display: block;
+    opacity: 1;
+  }
+
+  49.99% {
+    display: block;
+    opacity: 0;
+  }
+
+  50% {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
