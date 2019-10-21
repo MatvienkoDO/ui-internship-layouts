@@ -22,6 +22,29 @@
     }
   }
 
+  &_decoration {
+    &_left {
+      padding-left: 70px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border: 2px solid c.$special;
+        border-radius: 50%;
+        background-image: url('assets/download.svg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
   &__title {
     margin: 0;
 
@@ -78,6 +101,10 @@
 
       &_top {
         margin-top: 25px;
+      }
+
+      &_top-small {
+        margin-top: 12px;
       }
 
       &_bottom-big {
