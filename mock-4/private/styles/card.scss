@@ -1,0 +1,66 @@
+@use 'sass:color';
+@use 'colors.scss' as c;
+
+.card {
+  text-align: center;
+
+  &__type, &__price, &__period, &__divider, &__feature {
+    margin-bottom: 1px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__type, &__price, &__period, &__divider {
+    background-color: #252525;
+    color: white;
+  }
+
+  &__type {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 94px;
+    font-weight: 700;
+  }
+
+  &__currency {
+    font-size: 35px;
+    margin-right: -20px;
+  }
+
+  &__period {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: color.change(white, $alpha: 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__divider {
+    background-color: c.$special;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+
+    &_empty {
+      padding: 0;
+      height: 5px;
+    }
+  }
+
+  &__feature {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: white;
+    color: #86878b;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
