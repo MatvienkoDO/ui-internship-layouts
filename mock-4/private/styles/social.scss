@@ -2,6 +2,10 @@
   height: 50px;
   display: flex;
 
+  &_small {
+    height: 25px;
+  }
+
   &__link {
     height: 100%;
     margin-right: 35px;

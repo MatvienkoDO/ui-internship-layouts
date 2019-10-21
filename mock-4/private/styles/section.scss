@@ -108,4 +108,8 @@
     position: relative;
     box-shadow: 0 5px 10px -5px gray;
   }
+
+  &_vertical {
+    flex-direction: column;
+  }
 }
