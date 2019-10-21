@@ -27,6 +27,10 @@
       padding-left: 70px;
       position: relative;
 
+      @media (max-width: 1200px) {
+        padding-left: 55px;
+      }
+
       &::before {
         content: '';
         position: absolute;
@@ -58,6 +62,10 @@
       font-size: 36px;
       font-weight: 400;
       text-transform: uppercase;
+    }
+
+    &_small {
+      font-size: 14px;
     }
 
     &_light {
