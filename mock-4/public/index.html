@@ -358,6 +358,34 @@
       </article>
     </section>
 
+    <section class="section section_centered">
+      <article class="article article_centered article_wide">
+        <h2 class="article__title article__title_big">
+          contact us
+        </h2>
+        <div class="article__dash article__dash_centered"></div>
+
+        <p class="article__text article__text_indent_bottom-big">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <form action="/contact-us" method="POST" name="contact-us">
+          <div class="container">
+            <div class="container__element container__element_horizontal-indent_medium container container_vertical">
+              <input class="container__element container__element_vertical form-field" type="text" name="name" placeholder="Name" required>
+              <input class="container__element container__element_vertical form-field" type="email" name="email" placeholder="Email" required>
+              <input class="container__element container__element_vertical form-field" type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="container__element container__element_horizontal-indent_medium container">
+              <textarea class="form-field" name="message" placeholder="Message" required></textarea>
+            </div>
+          </div>
+
+          <button class="button button_indent_top" type="submit">Send Message</button>
+        </form>
+      </article>
+    </section>
+
     <footer class="section section_background_dark section_vertical-indent_tiny section_aligned_center section_vertical">
       <div class="social social_small">
         <a class="social__link" href="/social/facebook">
