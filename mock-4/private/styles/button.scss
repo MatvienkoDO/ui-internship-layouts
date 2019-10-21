@@ -1,6 +1,8 @@
 @use 'colors.scss' as c;
 
 .button {
+  display: inline-block;
+  text-decoration: none;
   border: 2px solid transparent;
   border-radius: 3px;
   padding: 16px 25px;
