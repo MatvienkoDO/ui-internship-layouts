@@ -16,7 +16,7 @@
 
     transition: .2s;
     &:hover {
-      filter: brightness(10%);
+      filter: sepia(0.5) saturate(40) hue-rotate(-30deg);
     }
   }
 }
