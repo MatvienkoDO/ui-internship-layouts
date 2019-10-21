@@ -2,7 +2,9 @@
 
 .tabs {
   &__tab {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 112px;
     height: 112px;
     border-width: 0;
@@ -27,9 +29,6 @@
 
     cursor: pointer;
     transition: .2s;
-    &:hover, &_active {
-      background-color: c.$special;
-    }
   }
 }
 
@@ -37,4 +36,15 @@
   @media (max-width: 1250px) {
     width: 250px;
   }
+}
+
+.tabs-state {
+  display: none;
+}
+
+.tabs__tab:hover,
+#tabs-state-1:checked ~ .tabs > #tabs__tab-1,
+#tabs-state-2:checked ~ .tabs > #tabs__tab-2,
+#tabs-state-3:checked ~ .tabs > #tabs__tab-3 {
+  background-color: c.$special;
 }
