@@ -1,0 +1,68 @@
+@use 'sass:color';
+@use 'colors.scss' as c;
+
+.trial-form {
+  $border-radius: 5px;
+
+  border-radius: $border-radius;
+  width: 100%;
+  max-width: 360px;
+
+  &_color {
+    &_light {
+      background-color: white;
+    }
+  }
+
+  &__title {
+    background-color: whitesmoke;
+    padding: 16px 50px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+
+    &-text_highlighted {
+      text-transform: uppercase;
+      color: c.$special;
+    }
+  }
+
+  &__field {
+    margin: 30px 0;
+  }
+
+  &__body {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &__submit {
+    border-width: 0;
+    background-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &-wrapper {
+      display: block;
+      padding: 20px 0;
+      text-align: center;
+      background-color: c.$special;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      cursor: pointer;
+
+      &:hover {
+        background-color: color.change(c.$special, $lightness: 40%);
+      }
+    }
+  }
+}

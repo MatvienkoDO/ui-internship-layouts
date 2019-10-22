@@ -1,0 +1,21 @@
+@use 'colors.scss' as c;
+
+.logo {
+  font-size: 27px;
+  font-family: sans-serif;
+
+  &::before {
+    content: 'AX';
+    color: white;
+  }
+
+  &::after {
+    content: 'IT';
+    color: c.$special;
+    font-weight: 100;
+  }
+
+  &_big {
+    font-size: 60px;
+  }
+}

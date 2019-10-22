@@ -1,0 +1,41 @@
+@use 'colors.scss' as c;
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 16px 25px;
+  background-color: c.$special;
+  cursor: pointer;
+  
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  transition: .2s;
+  &:hover {
+    color: c.$special;
+    border-color: c.$special;
+    background-color: transparent;
+  }
+
+  &_transparent {
+    border-color: white;
+    border-radius: 0;
+    padding: 14px 32px;
+    background-color: transparent;
+
+    &:hover {
+      color: c.$special;
+      border-color: c.$special;
+    }
+  }
+
+  &_indent {
+    &_top {
+      margin-top: 50px;
+    }
+  }
+}

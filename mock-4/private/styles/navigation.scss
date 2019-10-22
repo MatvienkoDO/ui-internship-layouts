@@ -1,0 +1,25 @@
+@use 'sass:color';
+@use 'colors.scss' as c;
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    color: color.change(white, $alpha: 0.69);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+
+    margin-right: 47px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: c.$special;
+    }
+  }
+}
